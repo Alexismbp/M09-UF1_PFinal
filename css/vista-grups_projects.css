@@ -252,3 +252,35 @@ select:focus {
   align-items: flex-start;
   gap: 15px;
 }
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.sidebar a.user-link {
+  margin-top: auto;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid-container > a:not([href*="vista-grups_alumnes"]) {
+  display: contents;
+  text-decoration: none;
+}
+
+.grid-container > a:not([href*="vista-grups_alumnes"]) .button {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  z-index: 2;
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.grid-container > a:not([href*="vista-grups_alumnes"]) .button:hover {
+  transform: none;
+  box-shadow: var(--shadow-lg);
+}

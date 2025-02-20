@@ -235,3 +235,16 @@ input[type="search"] {
   font-weight: bold;
   margin: 0 0 10px;
 }
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.sidebar a.user-link {
+  margin-top: auto;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}

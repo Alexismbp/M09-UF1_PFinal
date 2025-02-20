@@ -1,16 +1,18 @@
 :root {
-  --primary-font: "Inter", sans-serif;
-  --primary-color: #333;
-  --secondary-color: #666;
-  --background-color: #f5f5f5;
+  --primary-color: #333333;
+  --text-primary: #333;
+  --text-secondary: #666;
   --border-color: #e0e0e0;
-  --modal-width: 482px;
-  --button-height: 40px;
+  --bg-light: #f5f5f5;
+  --bg-hover: #e8e8e8;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 body {
   margin: 0;
-  font-family: var(--primary-font);
+  font-family: "Inter", sans-serif;
   background-image: url("../../assets/images/alumnesbg.png");
   background-size: cover;
   background-position: center;
@@ -29,32 +31,32 @@ body {
 }
 
 .modal {
-  width: var(--modal-width);
+  width: 482px;
   background: #ffffff;
   border-radius: 8px;
   position: relative;
   padding: 40px;
   box-sizing: border-box;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-md);
 }
 
 .modal-title {
   font-size: 32px;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--text-primary);
 }
 
 .modal-description {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: var(--secondary-color);
+  color: var(--text-secondary);
 }
 
 .file-select {
   width: 382px;
-  height: var(--button-height);
-  background: var(--background-color);
+  height: 40px;
+  background: var(--bg-light);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   display: flex;
@@ -66,13 +68,13 @@ body {
 }
 
 .file-select:hover {
-  background: #e8e8e8;
+  background: var(--bg-hover);
 }
 
 .file-name {
   font-size: 12px;
   margin-bottom: 25px;
-  color: var(--secondary-color);
+  color: var(--text-secondary);
 }
 
 .button-container {
@@ -83,27 +85,27 @@ body {
 
 .button {
   min-width: 120px;
-  height: var(--button-height);
+  height: 40px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s;
   border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
-.button:first-child {
+.button:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+}
+
+.button-primary {
   background: var(--primary-color);
   color: white;
 }
 
-.button:last-child {
+.button-secondary {
   background: #ffffff;
   border: 1px solid var(--border-color);
-  color: var(--primary-color);
-}
-
-.button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-1px);
+  color: var(--text-primary);
 }
