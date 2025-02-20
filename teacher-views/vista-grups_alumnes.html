@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grups Alumnes Professor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/grups_alumnes.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img
+        src="../assets/images/logo-institut-sapalomera.png"
+        alt="Institut Sa Palomera"
+      />
+      <div class="menu-item active">Inici</div>
+      <div class="menu-item">Professors</div>
+      <div class="menu-item">Alumnes</div>
+      <div class="menu-item">Horaris</div>
+      <div class="menu-item">Tancar sessió</div>
+      <div class="user-section">
+        <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
+        <span>Usuari</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <div class="controls-container">
+          <h1 class="page-title">Grup 2n DAW</h1>
+          <div class="button-group">
+            <button class="btn-white">Alumnes</button>
+            <button class="btn-black">Projectes</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table Section -->
+      <div class="table-section">
+        <div class="table-controls">
+          <select>
+            <option value="" disabled>Ordenar per:</option>
+            <option value="1">Nom i cognoms</option>
+            <option value="2">IDALU</option>
+          </select>
+          <button class="button">Passar llista</button>
+          <div class="search-box">
+            <input type="search" placeholder="Cerca ..." />
+          </div>
+        </div>
+
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th>IDALU</th>
+              <th>Nom i cognoms</th>
+              <th>Correu electrònic</th>
+              <th>Grup</th>
+              <th>Accions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Me quiero</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">✏️</button>
+                <button class="action-btn">📋</button>
+                <button class="action-btn">⋯</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Ir a</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">✏️</button>
+                <button class="action-btn">📋</button>
+                <button class="action-btn">⋯</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Dormir</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">✏️</button>
+                <button class="action-btn">📋</button>
+                <button class="action-btn">⋯</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Alexis Boisset</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">✏️</button>
+                <button class="action-btn">📋</button>
+                <button class="action-btn">⋯</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

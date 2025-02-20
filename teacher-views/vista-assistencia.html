@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grups Assistencia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/vista-assistencia.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <img
+        src="../assets/images/logo-institut-sapalomera.png"
+        alt="Institut Sa Palomera"
+      />
+      <div class="menu-item active">Inici</div>
+      <div class="menu-item">Professors</div>
+      <div class="menu-item">Alumnes</div>
+      <div class="menu-item">Horaris</div>
+      <div class="menu-item">Tancar sessió</div>
+      <div class="user-section">
+        <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
+        <span>Usuari</span>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1>Grup 2n DAW</h1>
+      <div class="date-controls">
+        <select class="order-select" name="order-select" value="Ordenar per:">
+          <option value="" disabled>Ordenar per:</option>
+          <option value="1">Nom i cognoms</option>
+          <option value="2">Hores totals</option>
+          <option value="3">% Faltes</option>
+        </select>
+
+        <div class="date-selectors">
+          <div>
+            <label>Dia:</label>
+            <select>
+              <option>17</option>
+            </select>
+          </div>
+          <div>
+            <label>Mes:</label>
+            <select>
+              <option>Febrer</option>
+            </select>
+          </div>
+          <div>
+            <label>Any:</label>
+            <select>
+              <option>2025</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <input type="search" placeholder="Cerca ..." />
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom i cognoms</th>
+            <th>
+              Dilluns <br />
+              17/02/2025 <br /><br />
+              15:00 - 16:00
+            </th>
+            <th>
+              Dilluns <br />
+              17/02/2025 <br /><br />
+              16:00 - 17:00
+            </th>
+            <th>
+              Dilluns <br />
+              17/02/2025 <br /><br />
+              17:30 - 18:30
+            </th>
+            <th>
+              Dilluns <br />
+              17/02/2025 <br /><br />
+              18:30 - 19:30
+            </th>
+            <th>
+              Dilluns <br />
+              17/02/2025 <br /><br />
+              19:30 - 20:30
+            </th>
+            <th class="separator-column"></th>
+            <th>HORES TOTALS</th>
+            <th>% FALTES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="user-icon">👤</span>
+              Me quiero
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-1"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-1"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-1"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-2"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-2"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-2"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-3"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-3"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-3"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-4"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-4"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-4"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-5"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-5"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-1-5"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="separator-column"></td>
+            <td>98h</td>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="user-icon">👤</span>
+              Ir a
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-1"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-1"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-1"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-2"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-2"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-2"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-3"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-3"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-3"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-4"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-4"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-4"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-5"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-5"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-2-5"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="separator-column"></td>
+            <td>93h</td>
+            <td>6%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="user-icon">👤</span>
+              Dormir
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-1"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-1"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-1"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-2"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-2"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-2"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-3"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-3"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-3"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-4"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-4"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-4"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-5"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-5"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-3-5"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="separator-column"></td>
+            <td>91h</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="user-icon">👤</span>
+              Alexis Boisset
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-1"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-1"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-1"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-2"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-2"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                    checked
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-2"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-3"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-3"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-3"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-4"
+                    class="radio-input radio-present"
+                    value="present"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-4"
+                    class="radio-input radio-late"
+                    value="late"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-4"
+                    class="radio-input radio-absent"
+                    value="absent"
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="disabled-column">
+              <div class="attendance-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-5"
+                    class="radio-input radio-present"
+                    value="present"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Present</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-5"
+                    class="radio-input radio-late"
+                    value="late"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Ret</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="attendance-4-5"
+                    class="radio-input radio-absent"
+                    value="absent"
+                    disabled
+                  />
+                  <span class="radio-custom"></span>
+                  <span class="text">Falta</span>
+                </label>
+              </div>
+            </td>
+            <td class="separator-column"></td>
+            <td>90h</td>
+            <td>5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="pull-attendance-btn">
+        Estirar assistència hora passada
+      </button>
+    </div>
+  </body>
+</html>

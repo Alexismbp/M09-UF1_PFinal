@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Projecte</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../CSS/create-projecte.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <h1 class="modal-title">Crear projecte</h1>
+        <div class="form-group">
+          <label for="projectName">Nom del projecte:</label>
+          <input type="text" id="projectName" />
+        </div>
+        <div class="date-container">
+          <div class="form-group">
+            <label for="startDate">Data inici:</label>
+            <input type="date" id="startDate" />
+          </div>
+          <div class="form-group">
+            <label for="endDate">Data fi:</label>
+            <input type="date" id="endDate" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Imatge:</label>
+          <div class="image-upload-container">
+            <div class="image-upload-area">
+              <img src="placeholder-image.svg" alt="Upload image" />
+            </div>
+            <button class="select-image-button">Seleccionar imatge</button>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="button primary">Crear projecte</button>
+          <button class="button secondary">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

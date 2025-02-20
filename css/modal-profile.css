@@ -1,0 +1,111 @@
+:root {
+  --color-primary: #333333;
+  --color-background: #ffffff;
+  --color-input-bg: #f5f5f5;
+  --color-border: #e0e0e0;
+  --color-text-secondary: #666;
+  --border-radius: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 20px;
+  --spacing-lg: 35px;
+  --spacing-xl: 40px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background-image: url("../assets/images/teacher-indexbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 482px;
+  background: var(--color-background);
+  border-radius: var(--border-radius);
+  position: relative;
+  padding: var(--spacing-xl);
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  font-size: 32px;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  height: var(--spacing-xl);
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input:disabled {
+  background: var(--color-border);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+.button-container {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  margin-top: var(--spacing-sm);
+}
+
+.button {
+  min-width: 120px;
+  height: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+}
+
+.button-primary {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.button-secondary {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+}
+
+.button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}

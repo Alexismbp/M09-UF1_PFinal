@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professors</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/professors.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <img
+        src="../assets/images/logo-institut-sapalomera.png"
+        alt="Institut Sa Palomera"
+      />
+      <div class="menu-item">Inici</div>
+      <div class="menu-item active">Professors</div>
+      <div class="menu-item">Alumnes</div>
+      <div class="menu-item">Horaris</div>
+      <div class="menu-item">Tancar sessió</div>
+      <div class="user-section">
+        <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
+        <span>Usuari</span>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <div class="controls-container">
+          <h1 class="page-title">Professors</h1>
+        </div>
+      </div>
+
+      <div class="table-section">
+        <div class="table-controls">
+          <select>
+            <option value="" disabled>Ordenar per:</option>
+            <option value="1">Nom i cognoms</option>
+            <option value="2">ID</option>
+          </select>
+          <div class="search-box">
+            <input type="search" placeholder="Cerca ..." />
+          </div>
+        </div>
+
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom i cognoms</th>
+              <th>Correu electrònic</th>
+              <th>Grups (Equips Docents)</th>
+              <th>Accions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Ahinoa Zaldua</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>VJ, DAW 1, DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">📋</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Àngel Bosch</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>FPB, DAW 1, DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">📋</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Pere Sánchez</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 1, DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">📋</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1234</td>
+              <td>
+                <div class="user-info">
+                  <img src="../assets/icons/defaultpfp.png" alt="User Avatar" />
+                  <span>Xavi Martin</span>
+                </div>
+              </td>
+              <td>12569756</td>
+              <td>DAW 1, DAW 2</td>
+              <td class="actions">
+                <button class="action-btn">📋</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

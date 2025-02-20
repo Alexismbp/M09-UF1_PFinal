@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal Professor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/principal-professor.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img
+        src="../assets/images/logo-institut-sapalomera.png"
+        alt="Institut Sa Palomera"
+      />
+
+      <div class="menu-item active">Inici</div>
+      <div class="menu-item">Professors</div>
+      <div class="menu-item">Alumnes</div>
+      <div class="menu-item">Horaris</div>
+      <div class="menu-item">Tancar sessió</div>
+
+      <div class="user-section">
+        <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
+        <span>Usuari</span>
+        <div class="dialog-box">
+          <div class="dialog-content">
+            <br /><br />Ahir <span class="bold">no</span> és va passar llista a
+            les <br />
+            següents hores:
+            <div class="dialog-times">16:00 - 17:00 <br />17:30 - 18:30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <select>
+          <option value="" disabled>Ordenar per:</option>
+          <option value="1">Curs (A-Z)</option>
+          <option value="2">Curs (Z-A)</option>
+        </select>
+      </div>
+
+      <!-- Grid of Cards -->
+      <div class="grid-container">
+        <!-- Row One -->
+        <div class="card">
+          <div class="card-header pink-bg"></div>
+          <div class="card-footer">1r DAW</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header green-bg"></div>
+          <div class="card-footer">2n DAW</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

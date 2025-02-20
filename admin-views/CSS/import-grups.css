@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #333;
+  --text-color: #666;
+  --border-color: #e0e0e0;
+  --bg-light: #f5f5f5;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-image: url("../../assets/images/grupsbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 482px;
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
+}
+
+.modal-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.file-select {
+  width: 382px;
+  height: 40px;
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.file-select:hover {
+  background: #e8e8e8;
+}
+
+.file-name {
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: var(--text-color);
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.button {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.button:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.button-secondary {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+}

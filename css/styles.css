@@ -1,0 +1,309 @@
+:root {
+  --color-primary: #1890ff;
+  --color-text: #202124;
+  --color-border: #dadce0;
+  --shadow-default: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --sidebar-width: 190px;
+  --primary-color: #1f1f1f;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-default: all 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, white 0%, var(--color-primary) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 350px;
+  position: absolute;
+  top: 40px;
+}
+
+.login-box {
+  width: 550px;
+  background: white;
+  box-shadow: var(--shadow-default);
+  border-radius: var(--border-radius);
+  padding: 40px;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--color-text);
+}
+
+.google-button {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 0 20px;
+}
+
+.google-button:hover {
+  background-color: #f7f7f7;
+}
+
+.google-button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-text {
+  font-size: 16px;
+  color: #3c4043;
+  font-weight: 500;
+}
+
+/* Layout Components */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 30px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 2px 0 5px var(--shadow-color);
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  min-height: 100vh;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sidebar Elements */
+.sidebar img {
+  width: 165px;
+  margin-bottom: 110px;
+  padding-left: 15px;
+}
+
+.menu-item {
+  width: calc(100% - 10px);
+  padding: 15px 25px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition-default);
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: white;
+  color: black;
+  border-radius: 0 25px 25px 0;
+}
+
+.user-section {
+  margin-top: auto;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-section img {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  aspect-ratio: 1/1;
+}
+
+/* Header and Controls */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+/* Button Styles */
+.button-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.btn-black,
+.btn-white {
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: var(--transition-default);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-black {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+}
+
+/* Grid and Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: var(--transition-default);
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.card-header {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-footer {
+  padding: 15px 12px;
+  background-color: white;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Form Elements */
+select {
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 1px 3px var(--shadow-color);
+  transition: var(--transition-default);
+  padding-right: 35px;
+  min-width: 150px;
+  position: absolute;
+  left: 0;
+  top: -35px;
+  z-index: 2;
+}
+
+select:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+select:focus {
+  outline: none;
+  border-color: #42a5f5;
+  box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.2);
+}
+
+/* Background Patterns */
+.pink-bg {
+  background: linear-gradient(
+    45deg,
+    #e57373 30%,
+    #ef5350 30%,
+    #ef5350 50%,
+    #e57373 50%,
+    #e57373 80%,
+    #ef5350 80%
+  );
+  background-size: 50px 50px;
+}
+
+.green-bg {
+  background: linear-gradient(
+    45deg,
+    #81c784 30%,
+    #66bb6a 30%,
+    #66bb6a 50%,
+    #81c784 50%,
+    #81c784 80%,
+    #66bb6a 80%
+  );
+  background-size: 50px 50px;
+}
+
+.blue-bg {
+  background: linear-gradient(-45deg, #64b5f6 40%, #42a5f5 40%);
+  background-size: cover;
+}
