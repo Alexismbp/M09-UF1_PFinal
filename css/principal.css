@@ -4,8 +4,10 @@
   --border-color: #e0e0e0;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --text-color: #333;
+  --accent-blue: #42a5f5;
 }
 
+/* Estilos comunes */
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -36,15 +38,27 @@ body {
   padding-left: 15px;
 }
 
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.sidebar a.user-link {
+  margin-top: auto;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu-item {
-  width: calc(100% - 10px);
+  width: 100%;
   padding: 15px 25px;
   text-align: left;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  margin-right: 10px;
   font-weight: 400;
 }
 
@@ -53,6 +67,7 @@ body {
   background-color: white;
   color: black;
   border-radius: 0 25px 25px 0;
+  width: calc(100% - 10px);
 }
 
 .user-section {
@@ -64,7 +79,6 @@ body {
   font-size: 16px;
   width: 100%;
   box-sizing: border-box;
-  position: relative;
 }
 
 .user-section img {
@@ -78,6 +92,7 @@ body {
   aspect-ratio: 1/1;
 }
 
+/* Estilos específicos para profesor */
 .dialog-box {
   position: absolute;
   background-image: url("../assets/images/dialog-bubble.png");
@@ -86,7 +101,7 @@ body {
   width: 430px;
   height: 200px;
   left: 90px;
-  bottom: 50px;
+  bottom: 80px; /* Cambiado de 50px a 80px para subirlo */
   padding: 15px 20px;
   color: black;
   font-size: 15px;
@@ -108,6 +123,7 @@ body {
   font-weight: bold;
 }
 
+/* Contenido principal */
 .main-content {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
@@ -126,8 +142,9 @@ body {
   width: 100%;
 }
 
-select {
-  padding: 8px 35px 8px 15px;
+select,
+.button {
+  padding: 8px 15px;
   border-radius: 4px;
   border: 1px solid var(--border-color);
   background-color: white;
@@ -135,18 +152,27 @@ select {
   color: var(--text-color);
   box-shadow: 0 1px 3px var(--shadow-color);
   transition: all 0.2s ease;
+}
+
+select {
+  padding-right: 35px;
   min-width: 150px;
 }
 
-select:hover {
+select:hover,
+.button:hover {
   background-color: #f5f5f5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 select:focus {
   outline: none;
-  border-color: #42a5f5;
+  border-color: var(--accent-blue);
   box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.2);
+}
+
+.button {
+  cursor: pointer;
 }
 
 .grid-container {
@@ -154,6 +180,11 @@ select:focus {
   grid-template-columns: repeat(3, 1fr);
   gap: 65px;
   padding: 0;
+}
+
+.grid-container a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card {
@@ -186,6 +217,7 @@ select:focus {
   border-top: 1px solid var(--border-color);
 }
 
+/* Fondos de colores */
 .pink-bg {
   background: linear-gradient(
     45deg,
@@ -210,6 +242,11 @@ select:focus {
     #66bb6a 80%
   );
   background-size: 50px 50px;
+}
+
+.blue-bg {
+  background: linear-gradient(-45deg, #64b5f6 40%, #42a5f5 40%);
+  background-size: cover;
 }
 
 @keyframes fadeIn {

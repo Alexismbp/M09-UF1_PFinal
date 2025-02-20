@@ -32,8 +32,15 @@ body {
   justify-content: center;
 }
 
+.container a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .logo {
   width: 350px;
+  margin: 20px 0;
   position: absolute;
   top: 40px;
 }
@@ -306,4 +313,17 @@ select:focus {
 .blue-bg {
   background: linear-gradient(-45deg, #64b5f6 40%, #42a5f5 40%);
   background-size: cover;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.sidebar a.user-link {
+  margin-top: auto;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
 }

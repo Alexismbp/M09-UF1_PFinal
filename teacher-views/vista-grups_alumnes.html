@@ -13,19 +13,33 @@
   <body>
     <!-- Sidebar -->
     <div class="sidebar">
-      <img
-        src="../assets/images/logo-institut-sapalomera.png"
-        alt="Institut Sa Palomera"
-      />
-      <div class="menu-item active">Inici</div>
-      <div class="menu-item">Professors</div>
-      <div class="menu-item">Alumnes</div>
-      <div class="menu-item">Horaris</div>
-      <div class="menu-item">Tancar sessió</div>
-      <div class="user-section">
-        <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
-        <span>Usuari</span>
-      </div>
+      <a href="./principal-professor.html"
+        ><img
+          src="../assets/images/logo-institut-sapalomera.png"
+          alt="Institut Sa Palomera"
+      /></a>
+
+      <a href="principal-professor.html">
+        <div class="menu-item active">Inici</div>
+      </a>
+      <a href="vista-professor_professors.html">
+        <div class="menu-item">Professors</div>
+      </a>
+      <a href="vista-professor_alumnes.html">
+        <div class="menu-item">Alumnes</div>
+      </a>
+      <a href="../admin-views/horaris.html">
+        <div class="menu-item">Horaris</div>
+      </a>
+      <a href="../index.html">
+        <div class="menu-item">Tancar sessió</div>
+      </a>
+      <a href="#" class="user-link">
+        <div class="user-section">
+          <img src="../assets/icons/defaultpfp.png" alt="User Icon" />
+          <span>Usuari</span>
+        </div>
+      </a>
     </div>
 
     <!-- Main Content -->
@@ -35,7 +49,9 @@
           <h1 class="page-title">Grup 2n DAW</h1>
           <div class="button-group">
             <button class="btn-white">Alumnes</button>
-            <button class="btn-black">Projectes</button>
+            <a href="vista-professor-grups_projects.html"
+              ><button class="btn-black">Projectes</button></a
+            >
           </div>
         </div>
       </div>
@@ -48,7 +64,9 @@
             <option value="1">Nom i cognoms</option>
             <option value="2">IDALU</option>
           </select>
-          <button class="button">Passar llista</button>
+          <a href="vista-assistencia.html"
+            ><button class="button">Passar llista</button></a
+          >
           <div class="search-box">
             <input type="search" placeholder="Cerca ..." />
           </div>
